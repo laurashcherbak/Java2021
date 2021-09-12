@@ -10,5 +10,9 @@ public class Main {
         Task4.main(null);
         Task5.main(null);
 
+        Task7 task7 = new Task7();
+//        Task8 task8 = new Task8();
+
+
     }
 }
