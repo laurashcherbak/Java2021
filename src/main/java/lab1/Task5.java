@@ -1,7 +1,7 @@
 package lab1;
 
 public class Task5 {
-    public static void main(String[] args) {
+    public Task5() {
         System.out.println("Task 5");
 
         System.out.println("Creating and filling matrix...");
@@ -17,7 +17,7 @@ public class Task5 {
         int[][] matrix = {{1, 3, 5}, {2, 4, 6}};
         final int n = matrix.length;
         final int m = matrix[0].length;
-        int[][] transposedMatrix = new int[m][n];
+        int[][] transposedMatrix;
 
         System.out.println("Printing matrix...");
         printMatrix(matrix);
@@ -36,6 +36,7 @@ public class Task5 {
 
         System.out.println("Printing transposedMatrix...");
         printMatrix(transposedMatrix);
+        System.out.println();
 
     }
 
@@ -47,7 +48,7 @@ public class Task5 {
             for (int j = 0; j < m; j++) {
                 System.out.print(matrix[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 

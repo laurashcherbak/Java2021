@@ -1,23 +1,19 @@
 package lab1;
 
+import static lab1.Utils.print;
+
 public class Task3 {
-    public static void main(String[] args) {
+    public Task3() {
         System.out.println("Task 3");
 
         int[] arrayInt = {1, 8, 8, 7, 2};
         char[] arrayChar = {'e', 't', 'c', 'b'};
 
-        System.out.print("int[] = [");
-        for (int i = 0; i < arrayInt.length - 1; i++)
-            System.out.print(arrayInt[i] + ", ");
-        System.out.print(arrayInt[arrayInt.length - 1]);
-        System.out.println("]");
+        System.out.print("int[] = ");
+        print(arrayInt);
 
-        System.out.print("char[] = [");
-        for (int i = 0; i < arrayChar.length - 1; i++)
-            System.out.print(arrayChar[i] + ", ");
-        System.out.print(arrayChar[arrayChar.length - 1]);
-        System.out.println("]");
+        System.out.print("char[] = ");
+        print(arrayChar);
 
         String string = "";
         int length = (arrayInt.length > arrayChar.length) ? arrayInt.length : arrayChar.length;
@@ -34,7 +30,7 @@ public class Task3 {
         System.out.println("Printing int[] and char[] arrays into single String...");
         System.out.println(string);
 
-        System.out.println(" ");
+        System.out.println();
 
     }
 }
