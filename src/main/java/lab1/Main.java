@@ -8,5 +8,9 @@ public class Main {
         Task4 task4 = new Task4();
         Task5 task5 = new Task5();
 
+        Task7 task7 = new Task7();
+//        Task8 task8 = new Task8();
+
+
     }
 }
