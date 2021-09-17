@@ -1,14 +1,12 @@
 package lab1;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        Task1.main(null);
-        Task2.main(null);
-        Task3.main(null);
-        Task4.main(null);
-        Task5.main(null);
+        Task1 task1 = new Task1();
+        Task2 task2 = new Task2();
+        Task3 task3 = new Task3();
+        Task4 task4 = new Task4();
+        Task5 task5 = new Task5();
 
     }
 }

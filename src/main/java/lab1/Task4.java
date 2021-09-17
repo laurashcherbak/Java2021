@@ -1,14 +1,14 @@
 package lab1;
 
 public class Task4 {
-    public static void main(String[] args) {
+    public Task4() {
         System.out.println("Task 4");
 
         System.out.println("Printing numbers from 1 to 100...");
-        for (int i = 0; i < 100; i++) {
-            System.out.print((i + 1) + " ");
+        for (int i = 1; i <= 100; i++) {
+            System.out.print(i + " ");
         }
-        System.out.println(" ");
+        System.out.println();
 
         System.out.println("Printing numbers from 1 to 100 by conditions from the task 4...");
         for (int i = 1; i <= 100; i++) {
