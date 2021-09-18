@@ -1,5 +1,7 @@
 package lab1;
 
+import static lab1.Utils.print;
+
 public class Task5 {
     public Task5() {
         System.out.println("Task 5");
@@ -14,13 +16,11 @@ public class Task5 {
 //            for(int j = 0; j < m; j++)
 //                matrix[i][j] = (int)(Math.abs(Math.random()));
 
-        int[][] matrix = {{1, 3, 5}, {2, 4, 6}};
-        final int n = matrix.length;
-        final int m = matrix[0].length;
-        int[][] transposedMatrix;
+        final int[][] matrix = {{1, 3, 5}, {2, 4, 6}};
+        final int[][] transposedMatrix;
 
         System.out.println("Printing matrix...");
-        printMatrix(matrix);
+        print(matrix);
 
         System.out.println("Transposing Matrix ...");
         transposedMatrix = transposeMatrix(matrix);
@@ -35,27 +35,17 @@ public class Task5 {
 //        }
 
         System.out.println("Printing transposedMatrix...");
-        printMatrix(transposedMatrix);
+        print(transposedMatrix);
         System.out.println();
 
     }
 
-    public static void printMatrix(int[][] matrix) {
+
+
+    public static int[][] transposeMatrix(final int[][] matrix) {
         final int n = matrix.length;
         final int m = matrix[0].length;
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                System.out.print(matrix[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-
-    public static int[][] transposeMatrix(int[][] matrix) {
-        final int n = matrix.length;
-        final int m = matrix[0].length;
-        int[][] transposedMatrix = new int[m][n];
+        final int[][] transposedMatrix = new int[m][n];
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {

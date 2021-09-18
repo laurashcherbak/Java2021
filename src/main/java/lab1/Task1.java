@@ -11,7 +11,7 @@ public class Task1 {
 
         System.out.println("Solution 1");
         {
-            String[] arrayStrings = {"string 1", "string 1234", "string 123", "String 12345", "String 12"};
+            final String[] arrayStrings = {"string 1", "string 1234", "string 123", "String 12345", "String 12"};
 
             System.out.print("Original Array: ");
             print(arrayStrings);
@@ -20,7 +20,7 @@ public class Task1 {
                 for (int j = i; j >= 0; j--)
                     if (arrayStrings[j].length() > arrayStrings[j + 1].length()) {
                         // Change value arrayStrings[j] between arrayStrings[j+1]
-                        String temp = arrayStrings[j];
+                        final String temp = arrayStrings[j];
                         arrayStrings[j] = arrayStrings[j + 1];
                         arrayStrings[j + 1] = temp;
                     }
@@ -31,7 +31,7 @@ public class Task1 {
 
         System.out.println("Solution 2");
         {
-            String[] arrayStrings = {"string 1", "string 1234", "string 123", "String 12345", "String 12"};
+            final String[] arrayStrings = {"string 1", "string 1234", "string 123", "String 12345", "String 12"};
 
             System.out.println("Original Array: " + Arrays.toString(arrayStrings));
 
