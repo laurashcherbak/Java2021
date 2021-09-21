@@ -6,8 +6,8 @@ public class Task3 {
     public Task3() {
         System.out.println("Task 3");
 
-        int[] arrayInt = {1, 8, 8, 7, 2};
-        char[] arrayChar = {'e', 't', 'c', 'b'};
+        final int[] arrayInt = {1, 8, 8, 7, 2};
+        final char[] arrayChar = {'e', 't', 'c', 'b'};
 
         System.out.print("int[] = ");
         print(arrayInt);
@@ -16,7 +16,7 @@ public class Task3 {
         print(arrayChar);
 
         String string = "";
-        int length = (arrayInt.length > arrayChar.length) ? arrayInt.length : arrayChar.length;
+        final int length = (arrayInt.length > arrayChar.length) ? arrayInt.length : arrayChar.length;
         int i = 0;
 
         while (i <= length) {
