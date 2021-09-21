@@ -28,7 +28,7 @@ public class Task6 {
 
 
 
-    public static int[][] mulMatrix(final int[][] matrixA, final int[][] matrixB) {
+    public int[][] mulMatrix(final int[][] matrixA, final int[][] matrixB) {
         //Matrix multiplication
         //For matrix multiplication, the number of columns in the first matrix must be equal
         // to the number of rows in the second matrix.
