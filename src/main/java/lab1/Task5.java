@@ -17,13 +17,18 @@ public class Task5 {
 //                matrix[i][j] = (int)(Math.abs(Math.random()));
 
         final int[][] matrix = {{1, 3, 5}, {2, 4, 6}};
-        final int[][] transposedMatrix;
+        int[][] transposedMatrix;
 
         System.out.println("Printing matrix...");
         print(matrix);
 
         System.out.println("Transposing Matrix ...");
+
+        System.out.println("Solution 1: ");
         transposedMatrix = transposeMatrix(matrix);
+
+        System.out.println("Printing transposedMatrix...");
+        print(transposedMatrix);
 
 //        //Exception for transposing matrix n X n
 //        for(int i = 0; i < n; i++) {
@@ -34,15 +39,20 @@ public class Task5 {
 //            }
 //        }
 
+        System.out.println("Solution 2 (class Matrix): ");
+        final Matrix m = new Matrix(matrix);
+        transposedMatrix = m.transposeMatrix();
+
         System.out.println("Printing transposedMatrix...");
         print(transposedMatrix);
+
         System.out.println();
 
     }
 
 
 
-    public static int[][] transposeMatrix(final int[][] matrix) {
+    public int[][] transposeMatrix(final int[][] matrix) {
         final int n = matrix.length;
         final int m = matrix[0].length;
         final int[][] transposedMatrix = new int[m][n];
