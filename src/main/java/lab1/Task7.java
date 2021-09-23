@@ -1,7 +1,7 @@
 package lab1;
 
 public class Task7 {
-    public Task7() {
+    public static void task7() {
         System.out.println("Task 7");
 
         final User user1 = new User("Ivan", "Ivanov", 20, "ivanov@email.com");

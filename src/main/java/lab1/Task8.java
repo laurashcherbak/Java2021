@@ -1,7 +1,7 @@
 package lab1;
 
 public class Task8 {
-    public Task8() {
+    public static void task8() {
         System.out.println("Task 8");
 
         final CustomDouble number1 = new CustomDouble(1, 5.9);

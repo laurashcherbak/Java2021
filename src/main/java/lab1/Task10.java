@@ -1,17 +1,17 @@
 package lab1;
 
 public class Task10{
-    public Task10() {
+    public static void task10() {
         System.out.println("Task 10");
         System.out.println("Weather for the week:");
 
-        final Day[] week = {new Monday("Sunny"),
-               new Tuesday("Cloudy"),
-               new Wednesday("Cloudy"),
-               new Thursday("Rainy"),
-               new Friday("Cloudy"),
-               new Saturday("Rainy"),
-               new Sunday("Sunny"),
+        final Day[] week = {Day.Monday("Sunny"),
+               Day.Tuesday("Cloudy"),
+               Day.Wednesday("Cloudy"),
+               Day.Thursday("Rainy"),
+               Day.Friday("Cloudy"),
+               Day.Saturday("Rainy"),
+               Day.Sunday("Sunny")
         };
 
         int i = 1;

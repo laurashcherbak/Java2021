@@ -3,7 +3,7 @@ package lab1;
 import static lab1.Utils.print;
 
 public class Task3 {
-    public Task3() {
+    public static void task3() {
         System.out.println("Task 3");
 
         final int[] arrayInt = {1, 8, 8, 7, 2};
@@ -15,6 +15,14 @@ public class Task3 {
         System.out.print("char[] = ");
         print(arrayChar);
 
+        System.out.println("Printing int[] and char[] arrays into single String...");
+        System.out.println(concatenate(arrayInt, arrayChar));
+
+        System.out.println();
+
+    }
+
+    public static String concatenate(final int[] arrayInt, final char[] arrayChar) {
         String string = "";
         final int length = (arrayInt.length > arrayChar.length) ? arrayInt.length : arrayChar.length;
         int i = 0;
@@ -27,10 +35,6 @@ public class Task3 {
             i++;
         }
 
-        System.out.println("Printing int[] and char[] arrays into single String...");
-        System.out.println(string);
-
-        System.out.println();
-
+        return string;
     }
 }

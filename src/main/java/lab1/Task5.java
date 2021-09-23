@@ -3,7 +3,7 @@ package lab1;
 import static lab1.Utils.print;
 
 public class Task5 {
-    public Task5() {
+    public static void task5() {
         System.out.println("Task 5");
 
         System.out.println("Creating and filling matrix...");
@@ -52,7 +52,7 @@ public class Task5 {
 
 
 
-    public int[][] transposeMatrix(final int[][] matrix) {
+    public static int[][] transposeMatrix(final int[][] matrix) {
         final int n = matrix.length;
         final int m = matrix[0].length;
         final int[][] transposedMatrix = new int[m][n];

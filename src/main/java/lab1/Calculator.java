@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Calculator {
-    public Calculator() throws IOException {
+    public static void calculator() throws IOException {
         System.out.println("Task 9");
         System.out.println("Calculator: ");
 
@@ -41,7 +41,7 @@ public class Calculator {
 
             if (op == '+') {
                 result = number1.sum(number2);
-                System.out.println("Result: " + result.toDouble());
+                System.out.println("Result: " + result.getDoublePart());
             } else if (op == '-') {
                 result = number1.diff(number2);
                 System.out.println("Result: " + result.toDouble());

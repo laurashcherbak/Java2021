@@ -7,7 +7,7 @@ import static lab1.Utils.print;
 
 
 public class Task1 {
-    public Task1() {
+    public static void task1() {
         System.out.println("Task 1");
 
         System.out.println("Solution 1");
@@ -17,17 +17,8 @@ public class Task1 {
             System.out.print("Original Array: ");
             print(arrayStrings);
 
-            for (int i = 0; i < arrayStrings.length - 1; i++)
-                for (int j = i; j >= 0; j--)
-                    if (arrayStrings[j].length() > arrayStrings[j + 1].length()) {
-                        // Change value arrayStrings[j] between arrayStrings[j+1]
-                        final String temp = arrayStrings[j];
-                        arrayStrings[j] = arrayStrings[j + 1];
-                        arrayStrings[j + 1] = temp;
-                    }
-
             System.out.print("Sorted Array: ");
-            print(arrayStrings);
+            print(sort(arrayStrings));
         }
 
         System.out.println("Solution 2");
@@ -44,6 +35,18 @@ public class Task1 {
         }
         System.out.println();
 
+    }
+
+    public static String[] sort(final String[] arrayStrings) {
+        for (int i = 0; i < arrayStrings.length - 1; i++)
+            for (int j = i; j >= 0; j--)
+                if (arrayStrings[j].length() > arrayStrings[j + 1].length()) {
+                    // Change value arrayStrings[j] between arrayStrings[j+1]
+                    final String temp = arrayStrings[j];
+                    arrayStrings[j] = arrayStrings[j + 1];
+                    arrayStrings[j + 1] = temp;
+                }
+        return arrayStrings;
     }
 
 }

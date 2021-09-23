@@ -3,7 +3,7 @@ package lab1;
 import static lab1.Utils.print;
 
 public class Task6 {
-    public Task6() {
+    public static void task6() {
         System.out.println("Task 6");
 
         System.out.println("Creating and filling matrix...");
@@ -28,7 +28,7 @@ public class Task6 {
 
 
 
-    public int[][] mulMatrix(final int[][] matrixA, final int[][] matrixB) {
+    public static int[][] mulMatrix(final int[][] matrixA, final int[][] matrixB) {
         //Matrix multiplication
         //For matrix multiplication, the number of columns in the first matrix must be equal
         // to the number of rows in the second matrix.
