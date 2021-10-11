@@ -1,7 +1,8 @@
 package lab2.task2;
 
-public class Stack<T> {
+import java.util.Iterator;
 
+public class Stack<T> implements Iterable<T> {
 
     protected Node<T> top;
 
@@ -33,4 +34,25 @@ public class Stack<T> {
         top = top.getNext();
         return value;
     }
+
+
+    private class StackIterator implements Iterator<T> {
+
+        @Override
+        public boolean hasNext() {
+            return top != null;
+        }
+
+        @Override
+        public T next() {
+            final T value = top.getValue();
+            top = top.getNext();
+            return value;
+        }
+    }
+
+    public Iterator<T> iterator() {
+        return new StackIterator();
+    }
+
 }
