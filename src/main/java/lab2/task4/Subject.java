@@ -2,9 +2,9 @@ package lab2.task4;
 
 import java.util.Objects;
 
-public class Subject extends Mark {
+public class Subject {
     private String subject;
-    //private Mark mark;
+    private Mark mark;
 
     public String getSubject() {
         return subject;
@@ -13,19 +13,18 @@ public class Subject extends Mark {
     public void setSubject(final String subject) {
         this.subject = subject;
     }
-//
-//    public Mark getMark() {
-//        return mark;
-//    }
-//
-//    public void setMark(final Mark mark) {
-//        this.mark = mark;
-//    }
 
-    public Subject(final String subject, final int mark) {
-        super(mark);
+    public Mark getMark() {
+        return mark;
+    }
+
+    public void setMark(final Mark mark) {
+        this.mark = mark;
+    }
+
+    public Subject(final String subject, final Mark mark) {
         this.subject = subject;
-//        this.mark = mark;
+        this.mark = mark;
     }
 
     @Override
@@ -35,20 +34,6 @@ public class Subject extends Mark {
                 ", mark=" + getMark() +
                 '}';
     }
-
-//    @Override
-//    public boolean equals(final Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        final Subject subject1 = (Subject) o;
-//        return subject.equals(subject1.subject) && getMark().equals(subject1.getMark());
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(subject, getMark());
-//    }
-
 
     @Override
     public boolean equals(final Object o) {
