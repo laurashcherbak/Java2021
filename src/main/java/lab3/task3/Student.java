@@ -64,7 +64,15 @@ public class Student {
     }
 
     public void addSubject(final Subject subject) {
-        this.subjects.add(subject);
+        boolean subjectExist = false;
+        for (final Subject sb: this.subjects) {
+            if (sb.getSubject().equals(subject.getSubject())) {
+                subjectExist = true;
+            }
+        }
+        if (!subjectExist) {
+            this.subjects.add(subject);
+        }
     }
 
     public Mark getEnglishMark() {

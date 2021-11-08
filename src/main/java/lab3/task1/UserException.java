@@ -3,7 +3,7 @@ package lab3.task1;
 import java.util.List;
 
 public class UserException extends RuntimeException {
-    ErrorCode errorCode;
+    private ErrorCode errorCode;
 
     public ErrorCode getErrorCode() {
         return errorCode;
